@@ -1,4 +1,4 @@
-# Movie Web Application
+# Video_Clone Web Application
 
 Welcome to the Video_Clone Web Application! This web application allows you to browse and watch a collection of video. Explore various video, enjoy watching reels, and more!
 
@@ -61,7 +61,6 @@ npm start
 
 - React.js
 - Tailwind CSS
-- TypeScript
 - Axios
 - JavaScript
 
