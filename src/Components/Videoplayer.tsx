@@ -241,6 +241,7 @@ function Videoplayer(props: VideoPlayerProps): JSX.Element {
                     controls={true}
                     className="react-player absolute top-0 left-0"
                     onReady={handleVideoReady}
+                    playing={true} 
                   />
                 )}
               </div>
