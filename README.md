@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Movie Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Video_Clone Web Application! This web application allows you to browse and watch a collection of video. Explore various video, enjoy watching reels, and more!
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [About](#about)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Video_Clone Web Application! is a web application designed to help users easily access video,reels,and creator
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Browse a collection of video.
+- Add comments to share your thoughts on videos.
+- Watch videos on the basis of recommendation.
+- Filter video by creator.
+- Enjoy a seamless infinite scroll reel-watching experience.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 1](./src/assest/one.png)
+![Screenshot 2](./src/assest/two.png)
+![Screenshot 3](./src/assest/three.png)
+![Screenshot 4](./src/assest/four.png)
+![Screenshot 5](./src/assest/five.png)
+![Screenshot 6](./src/assest/six.png)
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deployed Link:-https://hypergro-assignment.vercel.app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Clone the repository
 
-### `npm run eject`
+git clone https://github.com/Abu1Osama/Hypergro_Assignment.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Change directory
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd your-repo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+# Start the development server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+- Video_Clone Web Application is built using the following technologies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- React.js
+- Tailwind CSS
+- TypeScript
+- Axios
+- JavaScript
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Visit the application in your web browser at http://localhost:3000 or the URL https://hypergro-assignment.vercel.app .
+1. Browse a collection of video.
+2. Add comments to share your thoughts on videos.
+3. Watch videos on the basis of recommendation.
+4. Filter video by creator.
+5. Enjoy a seamless infinite scroll reel-watching experience.

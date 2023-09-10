@@ -73,11 +73,11 @@ function Actor() {
   }, []);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mt-5" >
       {isLoading ? (
         <Loader />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
           {actors.map((item) => (
             <Link to={`/videoplayers?video_id=${item.postId}`} key={item.id}>
               <div className="text-center">

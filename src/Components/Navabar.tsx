@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="border-gray-200 sticky top-0 z-50 bg-[#232d2d] dark:bg-gray-800 dark:border-gray-700 ">
+    <nav className=" sticky top-0 z-50 bg-[#232d2d] dark:bg-gray-800 dark:border-gray-700 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between  p-2">
         <a href="/" className="flex items-center">
           <img
