@@ -231,15 +231,16 @@ function Videoplayer(props: VideoPlayerProps): JSX.Element {
             <Loader />
           ) : (
             <>
-              <div className="player relative  rounded-xl pt-[56.25%]  ">
+              <div className="player relative  rounded-xl pt-[66.25%] h-[500px] ">
                 {movie && (
                   <ReactPlayer
                     preload="auto"
                     url={movie.submission.mediaUrl}
                     width="100%"
-                    height="100%"
+                    // height="100%"
+                    height="500px"
                     controls={true}
-                    className="react-player absolute top-0 left-0"
+                    className="react-player absolute top-0 left-0 "
                     onReady={handleVideoReady}
                     playing={true} 
                   />
@@ -304,7 +305,7 @@ function Videoplayer(props: VideoPlayerProps): JSX.Element {
           {isLoading ? null : (
             <div className="comment-data p-5">
               <h3>Comments</h3>
-              <div className="comment-list max-h-[450px] overflow-y-auto">
+              <div className="comment-list max-h-[650px] overflow-y-auto">
                 <ul>
                   {comments.map((c) => (
                     <li key={c.id}>
