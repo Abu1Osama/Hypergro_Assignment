@@ -1,36 +1,6 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* background-color:var(--bg3); */
-  background-color:#1e2828;
-  color: white;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --bg1:#29AAE1;
-  --bg2:#00C893;
-  --bg3:#1a161f;
-  --bg4:#528070;
-  --bg5:#3d404d;
-  --bg6:#0f0f0f;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1136,8 +1106,36 @@ video {
   transition-duration: 300ms;
 }
 
-.react-player{
-  /* position: absolute; */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color:var(--bg3); */
+  background-color:#1e2828;
+  color: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg1:#29AAE1;
+  --bg2:#00C893;
+  --bg3:#1a161f;
+  --bg4:#528070;
+  --bg5:#3d404d;
+  --bg6:#0f0f0f;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 @media (max-width: 768px) {
