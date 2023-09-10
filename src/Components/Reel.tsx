@@ -2,12 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import Loader from "./Loader";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUp, faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useSwipeable } from "react-swipeable";
 
 interface VideoPlayerProps {}
 
 function Reel(props: VideoPlayerProps): JSX.Element {
-
   interface Comment {
     id: number;
     text: string;
@@ -95,16 +95,46 @@ function Reel(props: VideoPlayerProps): JSX.Element {
     fetchDataAndInitialize();
   }, []);
 
+  const handlers = useSwipeable({
+    onSwipedUp: () => handleSwipe("up"),
+    onSwipedDown: () => handleSwipe("down"),
+  });
+
+  const handleSwipe = (direction: string) => {
+    if (movies && movies.length > 0) {
+      let newIndex;
+      if (direction === "up") {
+        newIndex = (currentVideoIndex - 1 + movies.length) % movies.length;
+      } else if (direction === "down") {
+        newIndex = (currentVideoIndex + 1) % movies.length;
+      }
+      setCurrentVideoIndex(newIndex);
+      setIsPlaying(true);
+    }
+  };
   const playNextVideo = () => {
     if (movies && movies.length > 0) {
       setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % movies.length);
       setIsPlaying(true);
     }
   };
-
+  const playprevVideo = () => {
+    if (movies && movies.length > 0) {
+      setCurrentVideoIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
+      setIsPlaying(true);
+    }
+  };
   return (
-    <div className=" relative w-96 m-auto mt-5" style={{ boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px", height: "650px", display: "flex", flexDirection: "column", }}>
-      <div className="video-section p-4">
+    <div
+      className="relative w-96 m-auto mt-5"
+      style={{
+        boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+        height: "650px",
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <div className="video-section p-4" {...handlers}>
         {isLoading ? (
           <Loader />
         ) : (
@@ -131,13 +161,24 @@ function Reel(props: VideoPlayerProps): JSX.Element {
           </div>
         )}
       </div>
-      <div className="absolute bottom-14 right-0  flex justify-center  items-center p-5">
+      <div className="absolute bottom-0 right-0 flex flex-col justify-center items-center p-5">
+       
+      <button className="z-50">
+          <FontAwesomeIcon
+            onClick={playprevVideo}
+            icon={faArrowUp}
+            className="p-5 border rounded-full bg-green-600"
+          />
+        </button>
         <button className="z-50">
-          <FontAwesomeIcon icon={faArrowDown}  onClick={playNextVideo} className="p-5 border rounded-full bg-green-600"/>
+          <FontAwesomeIcon
+            onClick={playNextVideo}
+            icon={faArrowDown}
+            className="p-5 border rounded-full bg-green-600"
+          />
         </button>
       </div>
     </div>
   );
 }
-
 export default Reel;
