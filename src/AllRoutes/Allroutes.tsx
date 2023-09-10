@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../Components/Home";
 import Videoplayer from "../Components/Videoplayer";
 import Actor from "../Components/Actor";
+import Reel from "../Components/Reel";
 
 function Allroutes() {
   return (
@@ -12,6 +13,7 @@ function Allroutes() {
         <Route path={"/videoplayers"} element={<Videoplayer  />} />
        
         <Route path="/actors" element={<Actor />} />
+        <Route path="/reels" element={<Reel/>} />
       </Routes>
     </>
   );

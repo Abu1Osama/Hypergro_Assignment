@@ -70,7 +70,15 @@ function Navbar() {
                 Actors
               </a>
             </li>
-          </ul>
+            <li>
+              <a
+                href="/reels"
+                className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent hover:text-lime-400"
+              >
+               Reels
+              </a>
+            </li>
+          </ul> 
         </div>
       </div>
     </nav>
