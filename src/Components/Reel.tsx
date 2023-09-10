@@ -161,20 +161,26 @@ function Reel(props: VideoPlayerProps): JSX.Element {
           </div>
         )}
       </div>
-      <div className="absolute bottom-0 right-0 flex flex-col justify-center items-center p-5">
+      <div className="absolute bottom-20 right-0 flex flex-col justify-center items-center p-5">
        
       <button className="z-50">
           <FontAwesomeIcon
             onClick={playprevVideo}
             icon={faArrowUp}
-            className="p-5 border rounded-full bg-green-600"
+            className="p-5  border-stone-700 rounded-full bg-[#232d2d] hover:text-lime-400 hover:bg-cyan-600"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            }}
           />
         </button>
         <button className="z-50">
           <FontAwesomeIcon
             onClick={playNextVideo}
             icon={faArrowDown}
-            className="p-5 border rounded-full bg-green-600"
+            className="p-5  border-stone-700 rounded-full bg-[#232d2d]  hover:text-lime-400  hover:bg-cyan-600"
+            style={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            }}
           />
         </button>
       </div>
