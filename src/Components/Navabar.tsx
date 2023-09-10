@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import toplogo from "../assest/logo (2).png"
+import React from "react";
+import { useState } from "react";
+import toplogo from "../assest/logo.png"
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

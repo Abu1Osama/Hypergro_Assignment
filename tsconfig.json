@@ -1,16 +1,15 @@
 {
-    "compilerOptions": {
-      "target": "ES6",
-      "module": "CommonJS",
-      "outDir": "./dist",
-      "strict": true
-    },
-    "include": [
-      "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-      "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
-    "exclude": [
-      "node_modules"
-    ]
-  }
-  
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "strict": true
+  },
+  "include": [
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useCallback } from "react";
 import ReactPlayer from "react-player";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import Loader from "./Loader";
 import { Link } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
 
 interface VideoPlayerProps {
 }
